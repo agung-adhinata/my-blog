@@ -1,0 +1,12 @@
+@import "var";
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 20px;
+    a {
+        text-decoration: none;
+        color: $color-font-secondary;
+        padding-right: 10px;
+    }
+}
