@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="{{$styles.RelPermalink}}">
 
     {{$title := print .Title}}
-    {{if not .IsHome }}
+    {{if .IsHome }}
     {{$title := print .Site.Title " | " .Title }}
     {{end}}
     <title>{{ $title }}</title>
 </head>
+

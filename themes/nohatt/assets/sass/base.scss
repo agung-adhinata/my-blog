@@ -2,7 +2,40 @@
 @import "init";
 
 @import "navbar";
+@import "flexMinimal";
 
 section {
     background-color: beige;
+}
+
+.jumbotron {
+    background-color: #222;
+    color: wheat;
+    padding: 0 20px;
+    min-height: 80vh;
+    position: relative;
+
+    //init
+    h1, h2, h3, h4, h5, h6, p, a {
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 {
+        color: $color-accent;
+        font-size: 3em;
+
+    }
+    h3 {
+        font-weight: 100;
+    }
+    .grid-l {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+footer {
+    min-height: 20vh;
 }
