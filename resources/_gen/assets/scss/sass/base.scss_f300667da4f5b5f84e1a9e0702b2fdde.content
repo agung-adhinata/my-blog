@@ -63,4 +63,10 @@ section {
     position: absolute; }
 
 footer {
-  min-height: 20vh; }
+  min-height: 20vh;
+  background-color: #111;
+  color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
