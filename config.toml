@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Nekkichi website 🌵"
+description = "my nekkiichi's blog website"
 theme = "nohatt"
 
 [menu]
