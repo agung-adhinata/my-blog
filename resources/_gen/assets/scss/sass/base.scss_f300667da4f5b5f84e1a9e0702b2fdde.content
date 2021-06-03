@@ -1,20 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
-* {
-  font-family: 'Open Sans', sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif; }
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   margin: 0;
   padding: 0;
   overflow-y: auto; }
 
 * {
-  overflow: hidden; }
+  overflow: hidden;
+  box-sizing: border-box; }
 
 html {
   overflow: scroll; }
+
+* {
+  font-family: "Open Sans", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  color: #333; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif; }
+
+a,
+p,
+ul,
+ol,
+li,
+time {
+  font-family: "Roboto", monospace; }
+
+time {
+  color: lightcoral; }
+
+code {
+  font-family: "Fira Code", monospace; }
+  code span {
+    font-family: "Fira Code", monospace; }
 
 nav {
   display: flex;
@@ -40,15 +74,43 @@ nav {
 .flex-column {
   flex-direction: column; }
 
+html div.post {
+  margin: 10px auto;
+  padding: 40px;
+  box-shadow: 0px 0px 8px #dadada;
+  border-radius: 10px;
+  max-width: 100%; }
+  html div.post pre {
+    padding: 20px;
+    border-radius: 10px; }
+  html div.post table, html div.post th, html div.post td {
+    border: solid 1px #d6d6d6;
+    padding: 8px;
+    border-collapse: collapse; }
+    html div.post table tr:nth-child(even), html div.post th tr:nth-child(even), html div.post td tr:nth-child(even) {
+      background-color: #f2f2f2; }
+  html div.post th {
+    background-color: #bada55;
+    padding-top: 12px;
+    padding-bottom: 12px; }
+
+div.card-div {
+  max-width: 70%;
+  margin: auto;
+  padding: 20px; }
+  div.card-div a {
+    text-decoration: none;
+    color: #333; }
+
 section {
   background-color: beige; }
 
 .jumbotron {
   background-color: #222;
-  color: wheat;
   padding: 0 20px;
   min-height: 80vh;
-  position: relative; }
+  position: relative;
+  color: wheat; }
   .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6, .jumbotron p, .jumbotron a {
     padding: 0;
     margin: 0; }
@@ -56,7 +118,8 @@ section {
     color: #bada55;
     font-size: 3em; }
   .jumbotron h3 {
-    font-weight: 100; }
+    font-weight: 100;
+    color: wheat; }
   .jumbotron .grid-l {
     height: 100%;
     width: 100%;
@@ -65,8 +128,9 @@ section {
 footer {
   min-height: 20vh;
   background-color: #111;
-  color: #dddddd;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center; }
+  footer p {
+    color: #dddddd; }

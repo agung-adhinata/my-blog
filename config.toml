@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://nekkiichi.netlify.app/"
 languageCode = "en-us"
 title = "Nekkichi website 🌵"
 description = "my nekkiichi's blog website"

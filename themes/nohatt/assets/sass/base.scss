@@ -1,8 +1,10 @@
+@import "init"; //initialization variable and something
 @import "font";
-@import "init";
 
 @import "navbar";
 @import "flexMinimal";
+@import "content";
+@import "posts";
 
 section {
     background-color: beige;
@@ -10,11 +12,11 @@ section {
 
 .jumbotron {
     background-color: #222;
-    color: wheat;
+    
     padding: 0 20px;
     min-height: 80vh;
     position: relative;
-
+    color: wheat;
     //init
     h1, h2, h3, h4, h5, h6, p, a {
         padding: 0;
@@ -28,20 +30,24 @@ section {
     }
     h3 {
         font-weight: 100;
+        color: wheat;
     }
     .grid-l {
         height: 100%;
         width: 100%;
         position: absolute;
     }
+    
 }
 
 footer {
     min-height: 20vh;
     background-color: #111;
-    color: #dddddd;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    p {
+        color: #dddddd;
+    }
 }
