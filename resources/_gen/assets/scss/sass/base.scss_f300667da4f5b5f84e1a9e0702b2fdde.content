@@ -50,6 +50,9 @@ code {
   code span {
     font-family: "Fira Code", monospace; }
 
+html {
+  line-height: 1.15; }
+
 nav {
   display: flex;
   align-items: center;
@@ -77,9 +80,10 @@ nav {
 html div.post {
   margin: 10px auto;
   padding: 40px;
-  box-shadow: 0px 0px 8px #dadada;
+  box-shadow: 0px 0px 8px #f3f3f3;
   border-radius: 10px;
-  max-width: 100%; }
+  max-width: 800px;
+  line-height: 1.5; }
   html div.post pre {
     padding: 20px;
     border-radius: 10px; }
