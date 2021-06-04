@@ -4,8 +4,7 @@
 
 html div.post{
     margin: 10px auto;
-    padding: 40px;
-    box-shadow: 0px 0px 8px rgb(243, 243, 243);
+    box-shadow: 0px 0px 8px #f3f3f3;
     border-radius: 10px;
     max-width: 800px;
     line-height: 1.5;
@@ -34,5 +33,52 @@ html div.post{
         p {
             color: inherit;
         }
+    }
+
+    hr {
+        border-color: rgb(187, 187, 187);
+    }
+
+    section.footnotes {
+        border-radius: 10px;
+    }
+}
+
+@media only screen and(max-width : $breakpoint-phone) {
+    div.post {
+        padding: 40px 15px;
+
+        pre {
+            padding: 20px;  
+            border-radius: 10px;
+        }
+    
+        table, th, td {
+            border: solid 1px #d6d6d6;
+            padding: 8px;
+            border-collapse: collapse;
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+        }
+        th {
+            background-color: $color-accent;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        
+        blockquote {
+            color: #979696;
+            font-style: italic;
+            p {
+                color: inherit;
+            }
+        }
+    }
+}
+
+@media  screen and(min-width: $breakpoint-phone + 1) {
+    div.post {
+        padding: 40px 30px;
     }
 }
