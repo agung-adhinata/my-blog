@@ -6,11 +6,15 @@ body {
     overflow-y: auto;
 }
 
-* {
+div, section, nav {
     overflow: hidden;
     box-sizing: border-box;
 }
 
 html {
     overflow: scroll;
+}
+
+div pre {
+    overflow-x: scroll;
 }

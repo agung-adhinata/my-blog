@@ -7,10 +7,10 @@
     {{ $styles := $sass | resources.ToCSS }}
     <link rel="stylesheet" href="{{$styles.RelPermalink}}">
 
-    {{$title := print .Title}}
-    {{if .IsHome }}
-    {{$title := print .Site.Title " | " .Title }}
-    {{end}}
+    {{- $title := print .Title}}
+    {{ if .IsHome }}
+        {{- $title := print .Title}}
+    {{ end }}
     <title>{{ $title }}</title>
 </head>
 

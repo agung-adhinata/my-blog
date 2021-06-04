@@ -6,12 +6,15 @@ body {
   padding: 0;
   overflow-y: auto; }
 
-* {
+div, section, nav {
   overflow: hidden;
   box-sizing: border-box; }
 
 html {
   overflow: scroll; }
+
+div pre {
+  overflow-x: scroll; }
 
 * {
   font-family: "Open Sans", sans-serif; }
@@ -40,7 +43,7 @@ ul,
 ol,
 li,
 time {
-  font-family: "Roboto", monospace; }
+  font-family: "Roboto", sans-serif; }
 
 time {
   color: lightcoral; }
@@ -53,14 +56,30 @@ code {
 html {
   line-height: 1.15; }
 
+ul {
+  list-style-type: disc;
+  color: black;
+  overflow: unset; }
+
+li {
+  overflow: unset; }
+
 nav {
   display: flex;
   align-items: center;
-  padding: 20px 0 20px 20px; }
+  padding-left: 10px; }
   nav a {
     text-decoration: none;
     color: #333;
-    padding-right: 10px; }
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    transition: background-color,padding ease-in-out 0.2s; }
+  nav a:hover {
+    background-color: #cfcfcf;
+    padding-left: 40px;
+    padding-right: 40px; }
 
 .flex {
   display: flex; }
@@ -97,6 +116,11 @@ html div.post {
     background-color: #bada55;
     padding-top: 12px;
     padding-bottom: 12px; }
+  html div.post blockquote {
+    color: #979696;
+    font-style: italic; }
+    html div.post blockquote p {
+      color: inherit; }
 
 div.card-div {
   max-width: 70%;
@@ -138,3 +162,10 @@ footer {
   text-align: center; }
   footer p {
     color: #dddddd; }
+
+div#content {
+  min-height: 70vh; }
+
+div.title-section {
+  margin: auto;
+  padding: 0 40px; }

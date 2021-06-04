@@ -1,6 +1,7 @@
 baseURL = "https://nekkiichi.netlify.app/"
 languageCode = "en-us"
 title = "Nekkichi website 🌵"
+section="home"
 description = "my nekkiichi's blog website"
 theme = "nohatt"
 
@@ -13,7 +14,7 @@ theme = "nohatt"
   [[menu.main]]
     name = "Posts"
     pre = "pen-tool"
-    url = "/post/"
+    url = "/posts/"
     weight = 2
   [[menu.main]]
     name = "Tags"

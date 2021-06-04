@@ -28,4 +28,11 @@ html div.post{
         padding-bottom: 12px;
     }
     
+    blockquote {
+        color: #979696;
+        font-style: italic;
+        p {
+            color: inherit;
+        }
+    }
 }
