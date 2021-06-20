@@ -3,14 +3,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {{ .Scratch.Set "title" .Site.Title  }}
+    {{ .Scratch.Set "description" .Description }}
+    {{ if .IsHome }}
+        {{ .Scratch.Set "description" .Site.Params.Description }}
+    {{ end }}
+
+    {{ if .IsHome }}
+        {{ .Scratch.Set "title" .Site.Title }}
+    {{ else }}
+        {{$title := printf "%s | %s" .Title .Site.Title}}
+        {{ .Scratch.Set "title" $title }}
+    {{ end }}
+    
     {{ $sass := resources.Get "sass/base.scss" }}
     {{ $styles := $sass | resources.ToCSS }}
     <link rel="stylesheet" href="{{$styles.RelPermalink}}">
 
-    {{- $title := print .Title}}
-    {{ if .IsHome }}
-        {{- $title := print .Title}}
-    {{ end }}
-    <title>{{ $title }}</title>
+    <title>{{.Scratch.Get "title"}}</title>
+    <meta name="description" content={{.Scratch.Get "description"}}>
 </head>
-

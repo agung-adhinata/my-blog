@@ -2,7 +2,7 @@ baseURL = "https://nekkiichi.netlify.app/"
 languageCode = "en-us"
 title = "Nekkichi website 🌵"
 section="home"
-description = "my nekkiichi's blog website"
+description = "my nekkiichi's blog website made using hugo from scratch"
 theme = "nohatt"
 
 [menu]
@@ -35,3 +35,6 @@ theme = "nohatt"
     noClasses = true
     style = "dracula"
     tabWidth = 4
+
+[params]
+  Description = "my nekkiichi's blog website made using hugo from scratch"
