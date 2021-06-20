@@ -5,6 +5,7 @@ section="home"
 description = "my nekkiichi's blog website made using hugo from scratch"
 theme = "nohatt"
 
+
 [menu]
   [[menu.main]]
     name = "Home"
