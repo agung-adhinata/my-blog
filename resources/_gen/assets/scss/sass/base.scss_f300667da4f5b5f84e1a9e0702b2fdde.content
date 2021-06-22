@@ -41,7 +41,7 @@ ul,
 ol,
 li,
 time {
-  font-family: "Roboto", sans-serif; }
+  font-family: sans-serif; }
 
 time {
   color: lightcoral; }
@@ -65,26 +65,36 @@ li {
 nav {
   display: flex;
   align-items: center;
-  padding-left: 10px;
   box-shadow: 0px 0px 5px #f3f3f3;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   min-height: 58px;
   min-width: 100vw;
   position: fixed;
   top: 0;
-  z-index: 9999; }
+  z-index: 9997;
+  overflow: visible;
+  padding: 1px 15px 1px 10px; }
   nav a {
+    background-color: #f5f5f5;
     text-decoration: none;
+    border-radius: 5px;
     color: #333;
-    padding-right: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    transition: background-color, padding ease-in-out 0.2s; }
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    transition: background-color,transform ease-in-out 0.1s;
+    z-index: 9998; }
   nav a:hover {
-    background-color: #cfcfcf;
-    padding-left: 40px;
-    padding-right: 40px; }
+    background-color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.048);
+    z-index: 9999; }
+  nav a:active {
+    background-color: #ffffff;
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    z-index: 9999; }
 
 .flex {
   display: flex; }
