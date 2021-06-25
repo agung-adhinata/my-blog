@@ -15,7 +15,7 @@ div pre {
   overflow-x: scroll; }
 
 * {
-  font-family: "Open Sans", sans-serif; }
+  font-family: system-ui, sans-serif; }
 
 h1,
 h2,
@@ -110,6 +110,9 @@ nav {
 
 .flex-column {
   flex-direction: column; }
+
+div#content {
+  background-color: #f5f5f5; }
 
 html div.post {
   margin: 10px auto;
