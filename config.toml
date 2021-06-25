@@ -1,9 +1,11 @@
 baseURL = "https://nekkiichi.netlify.app/"
-languageCode = "en-us"
+languageCode = "id"
+DefaultContentLanguage = "id"
 title = "Nekkichi website 🌵"
 section="home"
-description = "my nekkiichi's blog website made using hugo from scratch"
+description = "Nekkiichi blog website. owned by Agung Adhinata"
 theme = "nohatt"
+footnoteReturnLinkContents = "^"
 
 
 [menu]
@@ -38,4 +40,5 @@ theme = "nohatt"
     tabWidth = 4
 
 [params]
-  Description = "my nekkiichi's blog website made using hugo from scratch"
+  Description = "Homepage of nekkiichi blog website. owned by Agung Adhinata"
+  
