@@ -108,10 +108,16 @@ html
 
 #### Code block dengan shortcode bawaan Hugo
 
-{{<highlight js >}}
-function hello(props) {
-console.log('hello bro');
-}
+{{<highlight html >}}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
+</html>
 {{</highlight >}}
 
 ## Tipe List
