@@ -1,17 +1,20 @@
 <head>
     <meta charset="UTF-8">
     <meta lang="id-ID">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <meta content="follow,index" name="robots">
+
+    
     {{ .Scratch.Set "title" .Site.Title  }}
     {{ .Scratch.Set "description" .Description }}
 
     {{ if .IsHome }}
-        {{$title := printf "%s | %s" .Site.Title "situs blog milik Agung Adhinata"}}
+        {{$title := printf "%s | %s" .Site.Title "website pribadi"}}
         {{ .Scratch.Set "title" $title }}
         {{ .Scratch.Set "description" .Site.Params.Description }}
     {{ else }}
