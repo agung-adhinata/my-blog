@@ -6,6 +6,7 @@ section="home"
 description = "Nekkiichi blog website. owned by Agung Adhinata"
 theme = "nohatt"
 footnoteReturnLinkContents = "^"
+summarylength = 30
 
 
 [menu]
