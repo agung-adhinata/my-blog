@@ -2,7 +2,7 @@
 author = "Hugo Authors"
 title = "Markdown Syntax Guide"
 date = "2021-03-06"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+description = "artikel sampel untuk pengujian styling Markdown pada hugo static server atau sejenisnya yang menggunakan markdown sebagai media penulisan kontennya"
 tags = [
     "markdown",
     "css",
@@ -17,13 +17,11 @@ aliases = ["migrate-from-jekyl"]
 draft=false
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
-
-<!--more-->
+Postingan ini menunjukkan bentuk styling markdown setelah melalui proses build menuju konten html.
 
 ## Headings
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Tag HTML seperti `<h1>`—`<h6>` mempresentasikan enam tingkatan _Heading_, `<h1>` adalah tingkatan tertinggi pada _Heading_ sedangkan `<h6>` adalah tingkatan yang terendah. contohnya ada di berikut ini:
 
 # H1
 
@@ -37,7 +35,7 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ###### H6
 
-## Paragraph
+## Paragraf
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
@@ -45,40 +43,44 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Blockquotes
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+elemen _blockquote_ menunjukkan konten dalam bentuk kutipan atau quotes, dapat ditambahkan dengan elemen tag `cite` atau `footer`, maupun tag `abbr` sebagai atribut.
 
-#### Blockquote without attribution
+#### Blockquote tanpa atribut
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use _Markdown syntax_ within a blockquote.
+> Ini adalah kutipan/ quotes, bla bla bla :v 
 
-#### Blockquote with attribution
+> **Catatan:** anda dapat menggunakan sintax _Markdown_ di dalam quotes
 
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+#### Blockquote dengan atribut
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+> Pemujaan yang berlebihan tidak sehat.
+> — <cite>Patrick[^1]</cite>
 
-## Tables
+[^1]: Kutipan di atas pernah dikatakan oleh patrick di film [Spongebob](https://id.wikipedia.org/wiki/SpongeBob_SquarePants) pada episode tentang Kevin si timun sombong.
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
+## Tabel
+
+Tabel sebenarnya bukan bagian dari markdown, namun secara _out-of-the-box_ Hugo mendukung format tabel ini.
 
 | Name  | Age |
 | ----- | --- |
 | Bob   | 27  |
 | Alice | 23  |
 
-#### Inline Markdown within tables
+#### Inline Markdown dengan tabel
 
 | Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
 
-## Code Blocks
+## Code Block
 
-#### Code block with backticks
+Sesuai judul, digunakan untuk memblok kode supaya terlihat lebih rapi. yah itu aja sih.
 
-{{<highlight html>}}
+#### Code block dengan koma terbalik (_backticks_)
+
+```
+html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -89,9 +91,9 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     <p>Test</p>
   </body>
 </html>
-{{</highlight>}}
+```
 
-#### Code block indented with four spaces
+#### Code block dengan dua tab indentasi
 
     <!doctype html>
     <html lang="en">
@@ -104,7 +106,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     </body>
     </html>
 
-#### Code block with Hugo's internal highlight shortcode
+#### Code block dengan shortcode bawaan Hugo
 
 {{<highlight js >}}
 function hello(props) {
@@ -112,38 +114,38 @@ console.log('hello bro');
 }
 {{</highlight >}}
 
-## List Types
+## Tipe List
 
 #### Ordered List
 
-1. First item
-2. Second item
-3. Third item
+1. Ikan Tuna
+2. Ayam Bangkok
+3. Burung Kutilang
 
 #### Unordered List
 
-- List item
-- Another item
-- And another item
+- Soda Kue
+- Pewarna
+- Tepung Terigu
 
 #### Nested list
 
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
+- Buah
+  - Melon
+  - Jeruk
+  - Semangka
+- Catatan
+  - Membersihkan Kandang Burung
+  - Cek Pelanggan
 
-## Other Elements — abbr, sub, sup, kbd, mark
+## Elemen tag lainnya — abbr, sub, sup, kbd, mark
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<abbr title="Graphics Interchange Format">GIF</abbr> adalah format bitmap.
 
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+_Press_ <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> _to end the session._
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
