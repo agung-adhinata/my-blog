@@ -10,6 +10,7 @@ tags = [
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
+visible = true
 draft=false
 +++
 
