@@ -75,8 +75,7 @@ Sesuai judul, digunakan untuk memblok kode supaya terlihat lebih rapi. yah itu a
 
 #### Code block dengan koma terbalik (_backticks_)
 
-```
-html
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

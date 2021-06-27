@@ -8,6 +8,9 @@ theme = "nohatt"
 footnoteReturnLinkContents = "^"
 summarylength = 30
 
+pygmentsCodefences = true
+pygmentsStyle = "pygments"
+
 [sitemap]
   changefreq = "monthly"
   filename = "sitemap.xml"
