@@ -40,6 +40,11 @@ summarylength = 30
     style = "dracula"
     tabWidth = 4
 
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 [params]
   Description = "Homepage of nekkiichi blog website. owned by Agung Adhinata"
   
