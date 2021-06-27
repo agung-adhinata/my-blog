@@ -12,6 +12,11 @@ html div.post{
     border-radius: 10px;
     max-width: 800px;
     line-height: 1.5;
+
+    a.btn-tag{
+        text-decoration: none;
+    }
+
     pre {
         padding: 20px;  
         border-radius: 10px;
@@ -45,6 +50,14 @@ html div.post{
 
     section.footnotes {
         border-radius: 10px;
+        border: solid 2px #555;
+        padding: 2px;
+        ol{
+            margin:0;
+        }
+        hr {
+            border: none;
+        }
     }
 }
 

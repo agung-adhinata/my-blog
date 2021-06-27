@@ -52,7 +52,8 @@ code {
     font-family: "Fira Code", monospace; }
 
 html {
-  line-height: 1.15; }
+  line-height: 1.15;
+  font-size: 18px; }
 
 ul {
   list-style-type: disc;
@@ -73,7 +74,8 @@ nav {
   top: 0;
   z-index: 9997;
   overflow: visible;
-  padding: 1px 15px 1px 10px; }
+  padding: 1px 15px 1px 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   nav a {
     background-color: #f5f5f5;
     text-decoration: none;
@@ -120,6 +122,8 @@ html div.post {
   border-radius: 10px;
   max-width: 800px;
   line-height: 1.5; }
+  html div.post a.btn-tag {
+    text-decoration: none; }
   html div.post pre {
     padding: 20px;
     border-radius: 10px; }
@@ -141,7 +145,13 @@ html div.post {
   html div.post hr {
     border-color: #bbbbbb; }
   html div.post section.footnotes {
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: solid 2px #555;
+    padding: 2px; }
+    html div.post section.footnotes ol {
+      margin: 0; }
+    html div.post section.footnotes hr {
+      border: none; }
 
 @media only screen and (max-width: 512px) {
   div.post {
@@ -170,12 +180,19 @@ html div.post {
     padding: 40px 30px; } }
 
 div.card-div {
-  max-width: 70%;
+  max-width: 60%;
   margin: auto;
-  padding: 20px; }
+  padding: 20px;
+  line-height: 1.5; }
   div.card-div a {
     text-decoration: none;
     color: #333; }
+
+a.btn-tag#tag-post {
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: #555;
+  color: white; }
 
 section {
   background-color: beige; }

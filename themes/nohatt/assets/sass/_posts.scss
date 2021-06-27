@@ -1,12 +1,21 @@
 
 div.card-div {
-    max-width: 70%;
+    max-width: 60%;
     margin: auto;
     padding: 20px;
+    line-height: 1.5;
 
     a {
         text-decoration: none;
         color: $color-font-secondary;
     }
     
+}
+
+a.btn-tag#tag-post {
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: #555;
+    color: white;
+
 }
