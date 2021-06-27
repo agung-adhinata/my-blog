@@ -1,7 +1,7 @@
 ---
 title: Starsector Review
 date: 2021-06-04T19:11:36+08:00
-draft: false
+draft: true
 author: nekkiichi
 description: Review tentang game starsector, game pc yang dapat dikatakan underrated
 tags:
