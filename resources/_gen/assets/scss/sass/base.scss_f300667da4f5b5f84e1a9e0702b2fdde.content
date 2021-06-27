@@ -47,9 +47,13 @@ time {
   color: lightcoral; }
 
 code {
-  font-family: "Fira Code", monospace; }
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+  line-height: 1; }
   code span {
-    font-family: "Fira Code", monospace; }
+    font-family: "Fira Code", monospace;
+    font-size: inherit;
+    line-height: inherit; }
 
 html {
   line-height: 1.15;

@@ -15,7 +15,12 @@
 
     
     {{ .Scratch.Set "title" .Site.Title  }}
-    {{ .Scratch.Set "description" .Description }}
+
+    {{ .Scratch.Set "description" .Summary }}
+    {{ if eq .Summary "" }}
+        {{ .Scratch.Set "description" .Description }}       
+    {{ end }}
+
 
     {{ if .IsHome }}
         {{$title := printf "%s | %s" .Site.Title "website pribadi"}}

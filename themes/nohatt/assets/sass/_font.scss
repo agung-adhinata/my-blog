@@ -37,8 +37,12 @@ time {
 
 code {
     font-family: "Fira Code", monospace;
+    font-size: 0.9rem;
+    line-height: 1;
   span {
     font-family:"Fira Code", monospace;
+    font-size: inherit;
+    line-height: inherit;
   }
 }
 
