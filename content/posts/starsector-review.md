@@ -6,7 +6,7 @@ author: nekkiichi
 description: Review tentang game starsector, game pc yang dapat dikatakan underrated
 tags:
   - games
-visible: true
+hide: true
 ---
 seperti yang kita tahu ada banyak game yang cukup bagus disini, yah begitulah.
 tentang starsector
