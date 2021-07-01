@@ -9,7 +9,6 @@ collections:
     folder: "content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    filter: {field: "hide", value: "true"}
     editor:
       preview: false
     fields:
