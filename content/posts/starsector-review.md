@@ -8,4 +8,4 @@ tags:
   - games
 visible: true
 ---
-seperti yang kita tahu ada banyak game yang cukup bagus disini, yah begitulah
+seperti yang kita tahu ada banyak game yang cukup bagus disini, yah begitulah.
