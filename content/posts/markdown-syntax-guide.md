@@ -11,7 +11,7 @@ tags = [
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 visible = true
-draft=false
+draft = false
 +++
 
 Postingan ini menunjukkan bentuk styling markdown setelah melalui proses build menuju konten html.
