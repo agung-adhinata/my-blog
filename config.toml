@@ -57,4 +57,5 @@ pygmentsStyle = "pygments"
 
 [params]
   Description = "Homepage of nekkiichi blog website. owned by Agung Adhinata"
+  taxonomiesExcludedFromSitemap = ["tags", "categories"]
   
