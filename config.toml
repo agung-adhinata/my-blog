@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://nekkiichi.netlify.app/"
 languageCode = "id"
 DefaultContentLanguage = "id"
 title = "Nekkichi website 🌵"
