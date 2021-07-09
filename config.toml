@@ -16,6 +16,9 @@ pygmentsStyle = "pygments"
   filename = "sitemap.xml"
   priority = 0.5
 
+[minify]
+  disableXML = true
+
 [menu]
   [[menu.main]]
     name = "Home"
