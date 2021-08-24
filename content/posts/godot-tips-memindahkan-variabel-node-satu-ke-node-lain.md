@@ -1,5 +1,5 @@
 ---
-title: "Godot Tips: Memindahkan Variabel Node Satu Ke Node Lain"
+title: "Godot Tips: Memindahkan Variabel Node Satu Ke Node Lain menggunakan Signal"
 date: 2021-08-24T10:28:58+08:00
 draft: false
 tags: 
